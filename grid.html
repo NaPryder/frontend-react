@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid template</title>
+</head>
+<style>
+  #main {
+    width: 1000px;
+    display: grid;
+    grid-template-areas:
+      "side    banner  banner  popup"
+      "side    cont1   cont2   ads"
+      "side    cont3   cont4   ads"
+      "side    foot   foot   foot"
+    ;
+    gap: 2px;
+
+  }
+
+  .sidebar {
+    grid-area: side;
+    height: 300px;
+  }
+
+  .banner {
+    grid-area: banner;
+
+  }
+
+  .popup {
+    grid-area: popup;
+  }
+
+  .ads {
+    grid-area: ads
+  }
+
+  .footer {
+    grid-area: foot;
+  }
+</style>
+</head>
+
+<body>
+
+
+  <div id="main">
+    <aside class="sidebar" style="background-color:coral;">Text 1</aside>
+    <header class="banner" style="background-color:lightblue;">Text 2</header>
+    <div class="popup" style="background-color:khaki;">Text 3</div>
+    <section style="background-color:pink;">Text 4</section>
+    <section style="background-color:lightgrey;">Text 5</section>
+    <section class="ads" style="background-color:rgb(213, 80, 80);">Text 6</section>
+    <section style="background-color:rgb(153, 215, 53);">Text 7</section>
+    <div style="background-color:rgb(245, 17, 199);">Text 8</div>
+    <footer class="footer" style="background-color:rgb(17, 245, 237);">Text 8</footer>
+  </div>
+
+</body>
+
+</html>

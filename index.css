@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --gray-10: #1a1a1a;
+  --gray-08: #141414;
+  --gray-30: #4d4d4d;
+  /* --gray-10: #1a1a1a; */
+
+  /* --font */
+}
+
+* {
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  width: 1920px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray-10);
+}
+
+header {
+  background-color: rgb(164, 140, 5);
+}
+#banner {
+  background-color: green;
+  color: white;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 162px;
+  padding-right: 36px;
+}
+#banner > p {
+  margin: 18px 0;
+  margin-left: auto;
+}
+
+#banner > .close-icon {
+  margin-left: auto;
+  margin-right: 0;
+  /* background-color: red; */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > nav {
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 80px; */
+  /* justify-content: space-around; */
+  align-items: center;
+}
+header > nav > * {
+  border: 1px solid black;
+}
+
+.menu-container {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.menu-container > button {
+  padding: 14px 24px;
+}
+#logo {
+  margin-left: 162px;
+}
+#contact-us {
+  margin-right: 162px;
+}

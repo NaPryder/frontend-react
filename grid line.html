@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #main {
+    width: 1000px;
+    display: grid;
+    /* grid-template-columns: 50px 50px 50px 50px 50px; */
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+  }
+
+  .sidebar {
+
+    font-weight: 900;
+    /* grid-column: 1/ -1; */
+    grid-row: 1/4;
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+  }
+
+  .banner {
+    grid-column: 2/4;
+  }
+
+  .popup {
+    grid-column: 4/4;
+    grid-row: 1/2;
+  }
+
+  .ads {
+    grid-row: 2/4;
+    grid-column: 4/5;
+  }
+</style>
+</head>
+
+<body>
+
+
+  <div id="main">
+    <div class="sidebar" style="background-color:coral;">Text 1</div>
+    <div class="banner" style="background-color:lightblue;">Text 2</div>
+    <div class="popup" style="background-color:khaki;">Text 3</div>
+    <div style="background-color:pink;">Text 4</div>
+    <div style="background-color:lightgrey;">Text 5</div>
+    <div class="ads" style="background-color:rgb(213, 80, 80);">Text 6</div>
+    <div style="background-color:rgb(153, 215, 53);">Text 7</div>
+    <div style="background-color:rgb(245, 17, 199);">Text 8</div>
+  </div>
+
+</body>
+
+</html>

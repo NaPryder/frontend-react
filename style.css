@@ -1,6 +1,80 @@
 * {
 }
 
+/* selector tagname */
 h1 {
-  color: aqua;
+  color: grey;
 }
+body {
+  background-color: rgb(81, 81, 81);
+}
+
+/* selector class name*/
+.container {
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 10px;
+  border: 5px solid white;
+  background-color: rgb(61, 91, 241);
+  width: 150px;
+  height: 200px;
+  overflow: auto;
+}
+
+.container > p {
+  font-style: italic;
+  color: gold;
+  font-weight: 400;
+  margin: 0;
+}
+.list-item {
+  background-color: beige;
+}
+/* .container > div {
+} */
+
+/* .container > .list-item > p {
+  color: green;
+} */
+/* pseudo selector */
+/* .fist-p {
+  color: red;
+} */
+.list-item > p {
+  margin: 5px;
+}
+.list-item > p:first-child {
+  color: red;
+}
+.list-item > p:not(:first-child) {
+  color: green;
+}
+.list-item > p:hover {
+  background-color: black;
+  color: greenyellow;
+  font-weight: 900;
+}
+
+input:focus {
+  color: blue;
+}
+button:focus {
+  color: blue;
+}
+/* 
+.text1 {
+  background-color: green;
+} */
+
+/* selector id */
+/* #username {
+  color: red;
+} */
+/* 
+div {
+  background-color: pink;
+}
+
+p {
+  font-weight: 900;
+} */
